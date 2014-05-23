@@ -1,6 +1,6 @@
 import java.io.Console;
 
-public class Mario {
+public class mario {
   public static void main(String[] args)
   {
     int height;
@@ -8,7 +8,7 @@ public class Mario {
     do
     {
       System.out.println("Height: ");
-      String height = c.readLine("Height: ");
+      height = c.readLine("Height: ");
       
     
     } while ((height<0) || (height>23));
