@@ -1,14 +1,15 @@
 import java.io.Console;
 
 public class mario {
+
   public static void main(String[] args)
   {
     int height;
-    Console c = System.console();
+    
     do
     {
       System.out.println("Height: ");
-      height = c.readLine("Height: ");
+      height = parseInt(System.console().readLine("Height: "));
       
     
     } while ((height<0) || (height>23));
