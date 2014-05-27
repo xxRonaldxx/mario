@@ -1,9 +1,8 @@
 package com.xx.xxronaldxx;
-import java.io.*;
 import java.util.Scanner;
 
 /**
- * Created by jharvard on 5/23/14.
+ * Created by jharvard on 5/23/14. /home/jharvard/github/launchcode-java-class/pset2
  */
 public class pset2 {
     public static void main(String[] args)  {
@@ -22,26 +21,21 @@ public class pset2 {
             output_choice = input.next();
         }while (!((output_choice.equals("c")) || (output_choice.equals("f"))));
 
-        if (output_choice.equals("f"))
-            try {
-                File file = new File("out.txt");
-                FileOutputStream fos = new FileOutputStream(file);
-                PrintStream ps = new PrintStream(fos);
-                System.setOut(ps);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+        Printer choice = (output_choice.equals("f")) ? new FilePrinter("out.txt") : new ConsolePrinter();
+
+        StringBuilder sb = new StringBuilder();
 
         for( int y = 0; y < height; y++) {
             for ( int x = height ; x > 0; x--) {
                 if ((x-1)>y) {
-                    System.out.print(" ");
+                    sb.append(" ");
                 }
                 else {
-                    System.out.print("#");
+                    sb.append("#");
                 }
             }
-            System.out.print("#\n");
+            sb.append("#\n");
         }
+        choice.print(sb);
     }
 }
