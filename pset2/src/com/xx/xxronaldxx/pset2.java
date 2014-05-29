@@ -2,7 +2,7 @@ package com.xx.xxronaldxx;
 import java.util.Scanner;
 
 /**
- * Created by jharvard on 5/23/14. /home/jharvard/github/launchcode-java-class/pset2
+ * Created by jharvard on 5/23/14. /home/jharvard/github/launchcode-java-class/pset2 <=====
  */
 public class pset2 {
     public static void main(String[] args)  {
