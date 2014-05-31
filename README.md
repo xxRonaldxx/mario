@@ -1,4 +1,4 @@
-Mario - xxRonaldxx's Java class code 
+Mario
 =============================================
 a repo for MoMenne's Launchcode-java-class @
 https://github.com/MoMenne/launchcode-java-class
