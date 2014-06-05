@@ -5,5 +5,4 @@ package com.xxronaldxx.pset3;
  */
 public interface Printer {
     void print(Pyramid msg);
-
 }
